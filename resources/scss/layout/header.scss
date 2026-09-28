@@ -1,0 +1,135 @@
+$header: ".header";
+$header__search: $header + "__search";
+
+#{$header} {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  &__bg {
+    background-color: #ffea96;
+    background-image: url(/temple/images/bg.png);
+    background-repeat: repeat;
+    background-size: 250px 250px;
+    #{$header}__logo span {
+      color: #ffffff;
+    }
+  }
+
+  &__social_media {
+    margin-left: auto;
+  }
+  &__logo {
+    max-width: 206px;
+    margin-right: 50px;
+    position: relative;
+    p {
+      font-weight: 900;
+      font-size: 24.56px;
+      text-transform: uppercase;
+    }
+    span {
+      font-family: GreatVibes;
+      font-weight: 400;
+      font-size: 33.49px;
+      position: absolute;
+      right: -44px;
+      transform: rotate(-17deg);
+      bottom: 4px;
+      color: #b0a05f;
+    }
+  }
+
+  &__search {
+    margin-left: auto;
+    label{
+        cursor: pointer;
+    }
+    &_input {
+      display: flex;
+      border-radius: 50px;
+      padding: 18px 18px;
+      padding-left: 40px;
+      transition: all 0s;
+
+      margin-left: 0;
+      background: transparent;
+      input {
+        width: 100%;
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-right: 10px;
+        display: none;
+      }
+      svg {
+        fill: #ffffff;
+      }
+    }
+    &__open {
+      width: 100%;
+      input {
+        display: block;
+      }
+
+      #{$header__search}_input {
+        margin-left: 50px;
+        background: #ffffff;
+      }
+      svg {
+        fill: #b0a05f;
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    gap: 50px;
+    margin-left: 5.47vw;
+    align-items: center;
+
+    ul {
+    }
+    li {
+    }
+    a {
+      font-weight: 400;
+      font-size: 16px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+  }
+
+  &__social_media {
+    display: flex;
+    margin-left: 9px;
+    gap: 4px;
+    align-items: center;
+  }
+
+  &__phone {
+    color: #ffffff;
+    margin-left: 24px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    a {
+      font-weight: 400;
+      font-size: 20px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      color: #ffffff;
+    }
+    p {
+      font-weight: 900;
+      font-size: 10px;
+      text-transform: uppercase;
+      color: #fff;
+      margin-top: 5px;
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    margin-left: 27px;
+  }
+}
