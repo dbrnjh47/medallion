@@ -10,8 +10,14 @@ document.querySelector('.header__search_input').insertAdjacentHTML('beforeend', 
 
 // 
 import svgTG from '/temple/images/layout/header/social_media/tg.svg?raw';
-document.querySelector('.btn_tg').insertAdjacentHTML('beforeend', svgTG);
+
+document.querySelectorAll('.btn_tg').forEach(el => {
+  el.insertAdjacentHTML('beforeend', svgTG);
+});
 
 // 
 import svgWT from '/temple/images/layout/header/social_media/wt.svg?raw';
-document.querySelector('.btn_wt').insertAdjacentHTML('beforeend', svgWT);
+
+document.querySelectorAll('.btn_wt').forEach(el => {
+  el.insertAdjacentHTML('beforeend', svgWT);
+});

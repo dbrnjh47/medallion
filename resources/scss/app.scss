@@ -91,7 +91,7 @@ body {
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     background: #fff;
-    background: black;
+    // background: black;
     overflow-x: hidden !important;
 }
 
@@ -114,7 +114,8 @@ li {
     width: 100%;
 }
 
-[class*="__button"] {
+[class*="__button"], button {
+    cursor: pointer;
     transition: all 0.4s;
     &:hover {
         opacity: 0.7;
@@ -318,6 +319,10 @@ li {
     position: relative;
     z-index: 0;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     svg {
         transition: all 0.4s;
         fill: #fff;
@@ -327,8 +332,8 @@ li {
     }
     &::before{
         content: "";
-        top: -2px;
-        left: 0;
+        top: -1px;
+        left: 1px;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -345,6 +350,16 @@ li {
         &::before{
             background: #FFFFFF;
             transform: rotate(0deg);
+        }
+    }
+
+    &_black{
+        &::before {
+            border: 1px solid #333333;
+            background: #333333;
+        }
+        &:hover{
+            background: transparent;
         }
     }
 }

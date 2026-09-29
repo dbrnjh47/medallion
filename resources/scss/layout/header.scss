@@ -2,16 +2,20 @@ $header: ".header";
 $header__search: $header + "__search";
 
 #{$header} {
-  display: flex;
-  padding-top: 25px;
-  padding-bottom: 25px;
+    padding: 25px 0;
+  &__container{
+    display: flex;
+  }
   &__bg {
-    background-color: #ffea96;
+    background-color: #B0A05F;
     background-image: url(/temple/images/bg.png);
     background-repeat: repeat;
     background-size: 250px 250px;
     #{$header}__logo span {
       color: #ffffff;
+    }
+    #{$header}__menu a{
+      color: #fff;
     }
   }
 

@@ -1,1 +1,184 @@
-.footer {}
+$footer: ".footer";
+
+#{$footer} {
+  margin-top: auto;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 58px;
+    margin-bottom: 58px;
+  }
+  &__logo p {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 24px;
+  }
+  &__title {
+    p {
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 20px;
+    }
+  }
+  &__menu {
+    ul {
+      a {
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 28px;
+        &:hover {
+          color: #b0a05f;
+          font-weight: 900;
+        }
+      }
+      li:last-child a {
+        margin-bottom: 0; /* убрать отступ у последнего */
+      }
+    }
+  }
+  &__dots {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 40px;
+    gap: 10px;
+    div {
+      width: 14px;
+      height: 14px;
+      border-radius: 100%;
+      border: 2px solid #333333;
+      background: #333333;
+      &#{$footer}__dot_paint {
+        background: transparent;
+      }
+    }
+  }
+  &__addresses {
+    p {
+      margin-bottom: 10px;
+      font-family: Roboto;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 140%;
+    }
+    li {
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 20px;
+      margin-left: 20px;
+      line-height: 180%;
+      list-style-image: url(/temple/images/layout/footer/dot.svg);
+    }
+  }
+  &__contact {
+    & > a {
+      font-weight: 900;
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+    & > p {
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 20px;
+      letter-spacing: 1%;
+      text-transform: uppercase;
+    }
+
+    .header__social_media {
+      margin-top: 16px;
+      a {
+        width: 80px;
+        height: 40px;
+      }
+      svg {
+        width: 22px;
+        height: 20px;
+      }
+    }
+  }
+
+  &__button {
+    position: relative;
+    z-index: 0;
+    padding: 102px 74px;
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 140%;
+    text-transform: uppercase;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      border: 1px solid #b0a05f;
+      border-radius: 50%;
+      transform: rotate(-12deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+      transition: all 0.4s;
+    }
+    &:hover {
+      color: #fff;
+      &::before {
+        background: #b0a05f;
+      }
+    }
+  }
+
+  &__before_bottom {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    a {
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 140%;
+    }
+  }
+
+  &__bottom {
+    background-color: #B0A05F;
+    background-image: url(/temple/images/bg.png);
+    background-repeat: repeat;
+    background-size: 250px 250px;
+    padding: 34px 0;
+    
+    #{$footer}__container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    p,
+    a {
+      font-family: Roboto;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 16px;
+      line-height: 140%;
+      color: #ffffff;
+    }
+    &_menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 9px;
+
+      li + li::before {
+        content: "|";
+        margin-right: 9px;
+        color: #fff; /* или цвет разделителя из макета */
+        opacity: 0.5;
+      }
+    }
+  }
+}
