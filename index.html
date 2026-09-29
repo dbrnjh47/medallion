@@ -63,10 +63,12 @@
     <div class="body_wrapper">
         <header class="header header__bg" itemscope itemtype="https://schema.org/WPHeader">
             <div class="header__container">
-                <a href="/" itemprop="url" class="header__logo">
-                    <p itemprop="name">Медальянс клиник</p>
-                    <span itemprop="headline">Премиум</span>
-                </a>
+                <div class="header__logo_wrapper">
+                    <a href="/" itemprop="url" class="header__logo">
+                        <p itemprop="name">Медальянс клиник</p>
+                        <span itemprop="headline">Премиум</span>
+                    </a>
+                </div>
                 <ul class="header__menu">
                     <li><a href="#">Услуги</a></li>
                     <li><a href="#">О нас</a></li>
@@ -79,15 +81,22 @@
                         <input type="text" placeholder="Поиск" itemprop="query-input">
                     </label>
                 </div>
-                <div class="header__social_media">
-                    <a href="#" target="_blank" class="btn_mini btn_tg"></a>
-                    <a href="#" target="_blank" class="btn_mini btn_wt"></a>
+                <div class="header__two_section">
+                    <div class="header__social_media">
+                        <a href="#" target="_blank" class="btn_mini btn_tg"></a>
+                        <a href="#" target="_blank" class="btn_mini btn_wt"></a>
+                    </div>
+                    <div class="header__phone">
+                        <a href="tel:+74951535693">+7 (495) 153-56-93</a>
+                        <p>Круглосуточно 24/7. Анонимно</p>
+                    </div>
+                    <div class="header__btn_wrapper">
+                        <button class="btn header__btn">Вызвать врача</button>
+                    </div>
                 </div>
-                <div class="header__phone">
-                    <a href="tel:+74951535693">+7 (495) 153-56-93</a>
-                    <p>Круглосуточно 24/7. Анонимно</p>
-                </div>
-                <button class="btn header__btn">Вызвать врача</button>
+                <button class="header__burger_btn">
+                    <span></span><span></span><span></span><span></span>
+                </button>
             </div>
         </header>
 
