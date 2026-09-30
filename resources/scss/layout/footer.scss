@@ -2,6 +2,18 @@ $footer: ".footer";
 
 #{$footer} {
   margin-top: auto;
+    z-index: 0;
+    position: relative;
+  &::before{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    background: url(/temple/images/layout/footer/bg.png) 0 0 / 100% 100%;
+    bottom: 90px;
+    left: 0;
+    width: 1105px;
+    height: 1287px;
+  }
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -247,6 +259,9 @@ $footer: ".footer";
   }
 
   @media (max-width: 700px) {
+    &::before{
+      display: none;
+    }
     &__wrapper {
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
