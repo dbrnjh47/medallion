@@ -148,29 +148,48 @@ button {
 }
 
 .app {
-    &__title{
-        h1, h2, h3{
-          font-weight: 900;
-          font-size: 46px;
-          line-height: 120%;
-          text-transform: uppercase;
-          text-align: center;
-          span{
-            position: relative;
-            z-index: 0;
-            &::before{
-              content: "";
-              position: absolute;
-              width: calc(100% + 11px);
-              height: 20px;
-              background: #B0A05F;
-              z-index: -1;
-              bottom: 9px;
-              left: -2px;
-            }
-          }
+  &__title {
+    h1,
+    h2,
+    h3 {
+      font-weight: 900;
+      font-size: 46px;
+      line-height: 120%;
+      text-transform: uppercase;
+      text-align: center;
+
+      span {
+        position: relative;
+        z-index: 0;
+        white-space: nowrap;
+        &::before {
+          content: "";
+          position: absolute;
+          background: #b0a05f;
+          z-index: -1;
+
+          width: calc(100% + 16px);
+          bottom: 5px;
+          left: -8px;
+          height: 12px;
         }
       }
+      @media (max-width: 1250px) {
+        font-size: 32px;
+        span::before {
+          height: 9px;
+        }
+      }
+
+      @media (max-width: 750px) {
+        font-size: 18px;
+        span::before {
+          height: 6px;
+          bottom: 1px;
+        }
+      }
+    }
+  }
   &__text {
   }
 }
@@ -414,27 +433,27 @@ button {
   }
 }
 
-.a_btn{
-    font-family: Roboto;
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 10%;
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-thickness: 0%;
-    text-decoration-skip-ink: auto;
-    &::after{
-        content: "";
-        width: 40px;
-        display: block;
-        height: 40px;
-        margin-left: 9px;
-        float: right;
-        margin-top: -11px;
-        background: url("/temple/images/main/hero/arrow.svg") 0 0 / 100% 100%;
-    }
+.a_btn {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 10%;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+  text-decoration-skip-ink: auto;
+  &::after {
+    content: "";
+    width: 40px;
+    display: block;
+    height: 40px;
+    margin-left: 9px;
+    float: right;
+    margin-top: -11px;
+    background: url("/temple/images/main/hero/arrow.svg") 0 0 / 100% 100%;
+  }
 }
 
 //
