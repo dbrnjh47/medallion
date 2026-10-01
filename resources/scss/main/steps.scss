@@ -9,7 +9,7 @@ $steps__img_item: ".steps__img_item";
     gap: 40px;
   }
   .app__title {
-    margin-bottom: 42px;
+    margin-bottom: 55px;
   }
 
   &__list {
@@ -36,10 +36,7 @@ $steps__img_item: ".steps__img_item";
       * {
         transition: all 0.4s;
       }
-      &:nth-child(1)::after,
-      &:nth-child(2)::after,
-      &:nth-child(3)::after,
-      &:nth-child(4)::after {
+      &:nth-child(-n + 4)::after {
         content: "";
         width: 76px;
         height: 157px;
