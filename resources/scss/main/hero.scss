@@ -46,6 +46,8 @@
   &__block {
     position: relative;
     z-index: 0;
+    display: flex;
+    flex-direction: column;
     &_bg_gradient {
       div {
         border-radius: 100%;
@@ -185,6 +187,7 @@
     margin-left: auto;
     margin-top: 46px;
     margin-right: 128px;
+    margin-top: auto;
     span {
       color: #b0a05f;
     }
