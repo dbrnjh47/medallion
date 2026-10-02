@@ -1,0 +1,265 @@
+.connection {
+  background: url(/temple/images/main/connection/bg.png) 0 0 / 100% 100%;
+  margin-top: 100px;
+  padding-top: 50px;
+  z-index: 10;
+  position: relative;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    align-items: end;
+  }
+  form {
+    padding-bottom: 30px;
+    margin-bottom: auto;
+    h4 {
+      font-weight: 900;
+      font-size: 58px;
+      line-height: 120%;
+      letter-spacing: 8%;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 23px;
+    }
+  }
+  &__phone {
+    z-index: 0;
+    position: relative;
+    height: 100%;
+    display: grid;
+    align-items: end;
+    align-content: end;
+    justify-content: end;
+    max-height: 330px;
+    .person_bg{
+      top: 125px;
+      z-index: -1;
+      img{
+        max-height: 495px;
+      }
+      &::before{
+        width: calc(100% - -8px);
+        left: -7px;
+        height: 88%;
+      }
+      &::after{
+        left: -16px;
+        height: calc(100% + -35px);
+        width: calc(100% + 25px);
+      }
+    }
+    &_wrapper {
+      background: #333333;
+      padding: 25px 65px;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+    img {
+      max-width: 100%;
+    }
+    a {
+      font-weight: 900;
+      font-size: 32px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 10%;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 15px;
+      color: #ffff;
+    }
+  }
+  &__networks {
+    gap: 5px;
+    display: flex;
+  }
+  &__flex {
+    display: flex;
+    gap: 22px;
+    margin-bottom: 10px;
+    input {
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 5%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      padding: 27px 90px;
+      border: 2px solid #ffffff;
+      &::placeholder {
+        color: #ffffff;
+      }
+    }
+    button {
+      width: 348px;
+      color: #b0a05f;
+    }
+    p {
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 140%;
+      color: #fff;
+      margin-right: 50px;
+      white-space: nowrap;
+      a {
+        color: #fff;
+        text-decoration: underline;
+        text-decoration-style: solid;
+      }
+    }
+    div {
+      & > a {
+      }
+    }
+  }
+  &__input_wrapper {
+    display: inline-flex;
+    gap: 22px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 0;
+    &::after {
+      content: "";
+      background: url(/temple/images/main/connection/arrow.png) 0 0 / 100% 100%;
+      width: 463.5px;
+      height: 61.5px;
+      position: absolute;
+      right: -89px;
+      top: -20px;
+      z-index: -1;
+    }
+  }
+}
+
+.connection {
+  @media (max-width: 1750px) {
+    &__phone {
+      a {
+        font-size: 18px;
+      }
+      p {
+        font-size: 10px;
+      }
+      img {
+        max-width: 395px;
+      }
+    }
+  }
+  @media (max-width: 1550px) {
+    &__flex p {
+      white-space: normal;
+      font-size: 16px;
+      margin: 10px;
+    }
+    form {
+      h4 {
+        font-size: 28px;
+      }
+      input {
+        font-size: 15px;
+        padding: 27px 68px;
+      }
+    }
+  }
+  @media (max-width: 1269px) {
+    &__input_wrapper::after {
+      display: none;
+    }
+    &__flex {
+      flex-direction: column;
+    }
+    &__flex p {
+      margin-bottom: 0;
+    }
+    form input {
+      font-size: 14px;
+      padding: 20px 25px;
+    }
+  }
+  @media (max-width: 900px) {
+    &__container {
+      gap: 10px;
+    }
+    &__phone div {
+      padding: 25px 25px;
+    }
+    &__phone img {
+      max-width: 316px;
+    }
+  }
+  @media (max-width: 750px) {
+    margin-top: 30px;
+    padding-top: 30px;
+    background: url(/temple/images/main/connection/bg_mob.png) 0 0 / 100% 100%;
+    &__container {
+      grid-template-columns: 1fr;
+    }
+    form {
+      display: grid;
+      padding-bottom: 0;
+      h4 {
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 110%;
+        letter-spacing: 8%;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+      input {
+        font-size: 16px;
+        padding: 18px 22px;
+      }
+    }
+    &__flex {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 0px;
+      p {
+        font-size: 12px;
+        text-align: center;
+      }
+      button {
+        width: 260px;
+        margin: 0 auto;
+      }
+    }
+    &__input_wrapper {
+      gap: 15px;
+      flex-direction: column;
+    }
+    &__phone {
+      justify-content: center;
+      margin-top: -56px;
+      .person_bg{
+        top: 78px;
+      }
+      img {
+        max-width: 250px;
+        min-height: 241px;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+      div {
+        position: relative;
+        bottom: 10px;
+        right: 0;
+        padding: 10px 20px;
+        a{
+          font-size: 14px;
+        }
+        p{
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}

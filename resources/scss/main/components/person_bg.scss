@@ -1,0 +1,40 @@
+.person_bg{
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  &::before {
+    content: "";
+    background: #f2f3f0;
+    box-shadow: 0px 24px 50px 0px rgba(0, 0, 0, 0.1019607843);
+    border-bottom: 0;
+    z-index: -1;
+    width: calc(100% - 17px);
+    height: 100%;
+    position: absolute;
+    left: 6px;
+    bottom: 0px;
+    border-top-left-radius: 310.5px;
+    border-top-right-radius: 310.5px;
+  }
+  &::after {
+    content: "";
+    border: 1px solid #ffffff;
+    border-bottom: 0;
+    opacity: 0.25;
+    z-index: -1;
+    width: calc(100% + 8px);
+    height: calc(100% + 16px);
+    position: absolute;
+    left: -6px;
+    bottom: 0;
+    border-top-left-radius: 310.5px;
+    border-top-right-radius: 310.5px;
+  }
+}
