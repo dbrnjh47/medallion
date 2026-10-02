@@ -151,13 +151,8 @@
       }
     }
     p {
+      text-align: left;
       margin-top: 6px;
-      font-family: Roboto;
-      font-weight: 400;
-      font-size: 28px;
-      line-height: 100%;
-      letter-spacing: 10%;
-      text-transform: uppercase;
     }
   }
   &__buttons {
@@ -383,9 +378,6 @@
     &__text_block::after {
       width: 680px;
     }
-    &__title p {
-      font-size: 24px;
-    }
     &__buttons .a_btn {
       margin-left: 10px;
     }
@@ -439,9 +431,6 @@
     }
   }
   @media (max-width: 1180px) {
-    &__title p {
-      font-size: 18px;
-    }
     &__info {
       padding: 30px 40px;
     }
@@ -471,9 +460,6 @@
     &__person {
       max-width: 280px;
       max-height: 280px;
-    }
-    &__title p {
-      font-size: 16px;
     }
     &__text_block h2 span::before {
       height: 10px;
@@ -508,9 +494,6 @@
     &__title h2 span::before,
     &__title h3 span::before {
       height: 8px;
-    }
-    &__title p {
-      font-size: 14px;
     }
     &__block &__buttons,
     &__info {

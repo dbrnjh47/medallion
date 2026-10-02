@@ -1,0 +1,98 @@
+.about_us {
+  margin-top: 100px;
+  &__banner {
+    max-height: 560px;
+    display: flex;
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+    &::after,
+    &::before {
+      content: "";
+      background: url(/temple/images/main/star.svg) 0 0 / 100% 100%;
+      position: absolute;
+      top: 50%;
+      width: 47px;
+      height: 62px;
+      transform: translate(0%, -50%);
+    }
+    &::after {
+      left: -12px;
+    }
+    &::before {
+      right: -12px;
+    }
+    img {
+      width: 100%;
+      min-height: 250px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 20px;
+    }
+  }
+  &__text {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: justify;
+    margin-top: 40px;
+  }
+
+  &__licenses{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 68px;    align-items: end;
+    &_list{
+      display: flex;
+      gap: 39px;
+      
+      img{
+        border-radius: 20px;
+        box-shadow: 18.81px 18.81px 38.56px 0px #3333331A;
+        max-width: 340px;
+        max-height: 471px;
+        transition: all 0.4s;
+        cursor: pointer;
+        &:hover{
+          opacity: 0.7;
+        }
+      }
+    }
+    &_text{
+      margin-top: 119px;
+      position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        width: 155px;
+        height: 119px;
+        z-index: 1;
+        background: url(/temple/images/main/steps/arrow.svg) 0 0 / 100% 100%;
+        left: -15px;
+        top: -153px;
+        transform: rotate(202deg);
+      }
+      &>p{
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 57px;
+        color: #8E8E8E;
+      }
+      .app__title{
+        h3{
+          font-size: 32px;
+          text-align: left;
+          margin-bottom: 21px;
+        }
+        p{
+          text-align: left;
+          text-transform: none;
+        }
+      }
+    }
+  }
+}
