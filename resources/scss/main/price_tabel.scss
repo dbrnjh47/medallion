@@ -1,0 +1,294 @@
+$price_tabel__steps__item: ".price_tabel__steps__item";
+$price_tabel__steps_arrow: ".price_tabel__steps_arrow";
+$price_tabel__tebels_item_strong_td: ".price_tabel__tebels_item_strong_td";
+
+.price_tabel {
+  margin-top: 100px;
+  position: relative;
+  z-index: 1;
+  .app__title {
+    margin-bottom: 40px;
+  }
+  &__mob_title {
+    display: none;
+  }
+  &__blocks {
+    display: flex;
+  }
+  &__steps {
+    margin-top: 32px;
+    padding: 40px 48px;
+    z-index: 1;
+    background: #b0a05f;
+    border-radius: 20px;
+    max-width: 548px;
+    height: fit-content;
+    .price_tabel__tebels_wrapper {
+      display: none;
+    }
+    li {
+      &:first-child #{$price_tabel__steps__item} {
+        margin-top: 0;
+      }
+      &:last-child #{$price_tabel__steps__item} {
+        border: none;
+        padding-bottom: 0;
+      }
+      #{$price_tabel__steps__item} {
+        cursor: pointer;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ffffff3d;
+        margin-top: 20px;
+
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: end;
+        gap: 49px;
+
+        opacity: 0.3;
+        transition: all 0.4s;
+
+        &.activ,
+        &:hover {
+          opacity: 1;
+        }
+        &.activ {
+          cursor: default;
+        }
+      }
+    }
+    &_step {
+      font-weight: 800;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #b0a05f;
+      background: #ffffff;
+      padding: 8px 15px;
+      border-radius: 32px;
+      font-stretch: 59%;
+      padding-bottom: 4px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    &_text_wrapper {
+      p {
+        color: #fff;
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 120%;
+        text-transform: uppercase;
+      }
+    }
+
+    &_arrow {
+      background: #ffffff75;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 16px;
+      transition: all 0.4s;
+    }
+  }
+
+  &__tebels {
+    z-index: 0;
+    width: 100%;
+    &_wrapper {
+      position: relative;
+      left: -40px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 18.81px 18.81px 38.56px 0px #5f67b01a;
+
+      padding: 80px 106px;
+      padding-right: 66px;
+      width: calc(100% + 40px);
+    }
+    &_item {
+      h4 {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 130%;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      table {
+        width: 100%;
+        border-spacing: 0 18px;
+        margin-top: -18px;
+        tbody tr {
+          td:first-child, #{$price_tabel__tebels_item_strong_td} p {
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 18px;
+          }
+          #{$price_tabel__tebels_item_strong_td}#{$price_tabel__tebels_item_strong_td} p{
+            font-family: "YFFRARETRIAL", sans-serif;
+          }
+          td:nth-child(2), #{$price_tabel__tebels_item_strong_td} span {
+            font-weight: 900;
+            font-size: 20px;
+            text-align: right;
+            text-transform: uppercase;
+            color: #b0a05f;
+            white-space: nowrap;
+            font-family: "YFFRARETRIAL", sans-serif;
+          }
+          #{$price_tabel__tebels_item_strong_td} p {
+            font-weight: 900;
+            line-height: 130%;
+            text-transform: uppercase;
+          }
+          #{$price_tabel__tebels_item_strong_td}{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding-top: 20px;
+          }
+        }
+      }
+      &_text {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        * {
+          color: #8e8e8e;
+          font-size: 16px;
+          font-family: Roboto;
+          font-weight: 400;
+
+          text-transform: lowercase;
+        }
+        span {
+          white-space: nowrap;
+          text-align: right;
+        }
+      }
+      &_info,
+      &_info a {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 32px;
+        color: #8e8e8e;
+        a {
+          text-decoration: underline;
+          text-decoration-style: solid;
+        }
+      }
+    }
+  }
+}
+
+.price_tabel {
+  @media (max-width: 1350px) {
+    &__steps_text_wrapper p {
+      font-size: 16px;
+    }
+    &__tebels_item {
+      h4 {
+        font-size: 20px;
+      }
+      table tbody tr td {
+        &:first-child {
+          font-size: 16px;
+        }
+        &:nth-child(2), #{$price_tabel__tebels_item_strong_td} span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  @media (max-width: 950px) {
+    &__steps {
+      padding: 20px 28px;
+    }
+    &__tebels_wrapper {
+      padding: 40px 73px;
+      padding-right: 33px;
+    }
+    &__steps_text_wrapper p {
+      font-size: 14px;
+    }
+    &__tebels_item h4 {
+      font-size: 16px;
+    }
+    &__tebels_item table {
+      border-spacing: 0 10px;
+    }
+  }
+
+  @media (max-width: 750px) {
+    &__tebels {
+      display: none;
+    }
+    &__steps {
+      width: 100%;
+      max-width: none;
+      margin-top: 0;
+      padding: 15px;
+      #{$price_tabel__tebels_item_strong_td}#{$price_tabel__tebels_item_strong_td}{
+        display: block;
+        p{
+          font-size: 14px;
+        }
+      }
+      .price_tabel__tebels {
+        &_wrapper {
+          display: block;
+          padding: 15px;
+          width: 100%;
+          left: 0;
+          border-radius: 0;
+
+          table {
+            border-spacing: 0 7px;
+            margin-bottom: 10px;
+            tbody tr td {
+              &:first-child {
+                font-size: 14px;
+              }
+              &:nth-child(2), #{$price_tabel__tebels_item_strong_td} span {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+        &__tebels_item_info,
+        &_tabel__tebels_item_info a {
+          font-size: 14px;
+          margin-top: 0;
+        }
+        &__tebels_item_info{
+          margin-top: 15px;
+        }
+      }
+      li {
+        #{$price_tabel__steps__item} {
+          padding-bottom: 10px;
+          gap: 10px;
+          &.activ #{$price_tabel__steps_arrow} {
+            transform: rotate(-90deg);
+          }
+        }
+      }
+      &_arrow {
+        transform: rotate(90deg);
+      }
+    }
+
+    .app__title {
+      h3 {
+        display: none;
+      }
+
+      margin-bottom: 15px;
+    }
+    &__mob_title {
+      display: block !important;
+    }
+  }
+}
