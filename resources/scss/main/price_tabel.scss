@@ -51,6 +51,10 @@ $price_tabel__tebels_item_strong_td: ".price_tabel__tebels_item_strong_td";
         &.activ,
         &:hover {
           opacity: 1;
+          #{$price_tabel__steps_arrow} {
+            background: #ffffff;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+          }
         }
         &.activ {
           cursor: default;
@@ -119,15 +123,18 @@ $price_tabel__tebels_item_strong_td: ".price_tabel__tebels_item_strong_td";
         border-spacing: 0 18px;
         margin-top: -18px;
         tbody tr {
-          td:first-child, #{$price_tabel__tebels_item_strong_td} p {
+          td:first-child,
+          #{$price_tabel__tebels_item_strong_td} p {
             font-family: Roboto;
             font-weight: 400;
             font-size: 18px;
           }
-          #{$price_tabel__tebels_item_strong_td}#{$price_tabel__tebels_item_strong_td} p{
+          #{$price_tabel__tebels_item_strong_td}#{$price_tabel__tebels_item_strong_td}
+            p {
             font-family: "YFFRARETRIAL", sans-serif;
           }
-          td:nth-child(2), #{$price_tabel__tebels_item_strong_td} span {
+          td:nth-child(2),
+          #{$price_tabel__tebels_item_strong_td} span {
             font-weight: 900;
             font-size: 20px;
             text-align: right;
@@ -141,7 +148,7 @@ $price_tabel__tebels_item_strong_td: ".price_tabel__tebels_item_strong_td";
             line-height: 130%;
             text-transform: uppercase;
           }
-          #{$price_tabel__tebels_item_strong_td}{
+          #{$price_tabel__tebels_item_strong_td} {
             display: flex;
             width: 100%;
             justify-content: space-between;
@@ -195,7 +202,8 @@ $price_tabel__tebels_item_strong_td: ".price_tabel__tebels_item_strong_td";
         &:first-child {
           font-size: 16px;
         }
-        &:nth-child(2), #{$price_tabel__tebels_item_strong_td} span {
+        &:nth-child(2),
+        #{$price_tabel__tebels_item_strong_td} span {
           font-size: 16px;
         }
       }
@@ -229,9 +237,9 @@ $price_tabel__tebels_item_strong_td: ".price_tabel__tebels_item_strong_td";
       max-width: none;
       margin-top: 0;
       padding: 15px;
-      #{$price_tabel__tebels_item_strong_td}#{$price_tabel__tebels_item_strong_td}{
+      #{$price_tabel__tebels_item_strong_td}#{$price_tabel__tebels_item_strong_td} {
         display: block;
-        p{
+        p {
           font-size: 14px;
         }
       }
@@ -250,7 +258,8 @@ $price_tabel__tebels_item_strong_td: ".price_tabel__tebels_item_strong_td";
               &:first-child {
                 font-size: 14px;
               }
-              &:nth-child(2), #{$price_tabel__tebels_item_strong_td} span {
+              &:nth-child(2),
+              #{$price_tabel__tebels_item_strong_td} span {
                 font-size: 14px;
               }
             }
@@ -262,7 +271,7 @@ $price_tabel__tebels_item_strong_td: ".price_tabel__tebels_item_strong_td";
           font-size: 14px;
           margin-top: 0;
         }
-        &__tebels_item_info{
+        &__tebels_item_info {
           margin-top: 15px;
         }
       }

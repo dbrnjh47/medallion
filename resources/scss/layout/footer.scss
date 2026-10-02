@@ -102,6 +102,10 @@ $footer: ".footer";
       font-weight: 900;
       font-size: 34px;
       margin-bottom: 20px;
+      &:hover{
+        color: #B0A05F;
+        opacity: 1;
+      }
     }
     & > p {
       font-family: Roboto;
@@ -154,12 +158,16 @@ $footer: ".footer";
     }
     &:hover {
       color: #fff;
+      opacity: 1;
       &::before {
         background: #b0a05f;
       }
     }
     &_wrapper {
       position: relative;
+      &:hover{
+        opacity: 1;
+      }
     }
   }
 

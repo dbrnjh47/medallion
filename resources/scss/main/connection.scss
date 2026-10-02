@@ -65,6 +65,10 @@
       text-align: center;
       text-transform: uppercase;
       color: #fff;
+      &:hover{
+        color: #B0A05F;
+        opacity: 1;
+      }
     }
     p {
       font-weight: 400;
@@ -255,6 +259,7 @@
         padding: 10px 20px;
         a{
           font-size: 14px;
+          
         }
         p{
           margin-top: 5px;

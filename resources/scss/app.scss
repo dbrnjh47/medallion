@@ -366,7 +366,10 @@ button {
     opacity: 0.25;
   }
   &:hover {
-    opacity: 0.7;
+    opacity: 1;
+    &::before {
+      transform: rotate(0deg);
+    }
   }
 
   &_color {
