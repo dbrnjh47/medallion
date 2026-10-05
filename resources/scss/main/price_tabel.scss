@@ -109,6 +109,10 @@ $price_tabel__tebels_item_strong_td: ".price_tabel__tebels_item_strong_td";
       padding: 80px 106px;
       padding-right: 66px;
       width: calc(100% + 40px);
+      display: none;
+      &.activ{
+        display: block;
+      }
     }
     &_item {
       h4 {
@@ -245,12 +249,11 @@ $price_tabel__tebels_item_strong_td: ".price_tabel__tebels_item_strong_td";
       }
       .price_tabel__tebels {
         &_wrapper {
-          display: block;
           padding: 15px;
           width: 100%;
           left: 0;
           border-radius: 0;
-
+          
           table {
             border-spacing: 0 7px;
             margin-bottom: 10px;

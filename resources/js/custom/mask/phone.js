@@ -1,7 +1,12 @@
 function maskPhone(input) {
   const fmt = v => {
-    let d = v.replace(/\D/g, '').replace(/^[78]/, '').slice(0, 10);
+    let raw = v.replace(/\D/g, '');
+    let d = raw.replace(/^[78]/, '').slice(0, 10);
+  
+    // если ввели только код страны — показываем «начало» маски
+    if (!d && raw) return '+7 (';
     if (!d) return '';
+  
     let r = '+7';
     if (d.length) r += ' (' + d.slice(0, 3);
     if (d.length >= 3) r += ')';

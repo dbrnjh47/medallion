@@ -3,3 +3,7 @@ import "./steps.js";
 import "./price_tabel.js";
 
 import "/resources/js/custom/gallery/img.js";
+
+import { initContentMigration } from '/resources/js/custom/contentMigration.js';
+
+initContentMigration();
