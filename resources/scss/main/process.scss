@@ -1,0 +1,25 @@
+.process{
+  margin-top: 117px;
+  &__banner{
+    margin-top: 0;
+  }
+  &__title{
+    margin-top: 50px;
+    &_mob{
+      display: none;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    margin-top: 33px;
+    &__title{
+      margin-top: 10px;
+      h3{
+        display: none;
+      }
+      &_mob{
+        display: block !important;
+      }
+    }
+  }
+}
