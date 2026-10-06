@@ -25,3 +25,12 @@ window.SwiperThumbs = Thumbs;
 window.SwiperScrollbar = Scrollbar;
 window.SwiperGrid = Grid;
 window.SwiperPagination = Pagination;
+
+// 
+
+import svgArrow from '/temple/images/app/arrow_slide.svg?raw';
+const btns = document.querySelectorAll('.btn_slide');
+
+btns.forEach(el => {
+  el.insertAdjacentHTML('beforeend', svgArrow);
+});

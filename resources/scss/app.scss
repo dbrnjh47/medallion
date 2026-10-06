@@ -129,6 +129,9 @@ li {
 button {
   cursor: pointer;
   transition: all 0.4s;
+  svg{
+    transition: all 0.4s;
+  }
   &:hover {
     opacity: 0.7;
   }
@@ -702,6 +705,38 @@ button {
     float: right;
     margin-top: -11px;
     background: url("/temple/images/main/hero/arrow.svg") 0 0 / 100% 100%;
+  }
+}
+
+.btn_slide{
+  padding: 22px 15px;
+  border: 1px solid #333333;
+  border-radius: 16px;
+  svg{
+    fill: #333333;
+    position: relative;
+    top: 1px;
+  }
+  &:hover{
+    opacity: 1;
+    background: #333333;
+    svg{
+      fill:#FFFFFF;
+    }
+  }
+  &.right{
+    transform: rotate(180deg);
+    top: 0px;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 14px 11px;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    svg{
+      width: 18px;
+      height: 9px;
+    }
   }
 }
 
