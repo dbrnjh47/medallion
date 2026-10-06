@@ -1,21 +1,40 @@
-.swiper-button-next, .swiper-button-prev {
-
+.swiper-button-next,
+.swiper-button-prev {
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {
-    font-size: 12px !important;
-    font-weight: bolder !important;
-    line-height: normal;
-    color: #fff;
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 12px !important;
+  font-weight: bolder !important;
+  line-height: normal;
+  color: #fff;
 }
 
-.swiper-button-next, .swiper-button-prev {
-    transition: all 0.4s;
-    &:hover{
-        opacity: 0.7;
-    }
+.swiper-button-next,
+.swiper-button-prev {
+  transition: all 0.4s;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
+}
 
+.swiper-pagination {
+}
+.swiper-pagination-bullet {
+  border: 2px solid #333333;
+}
+* {
+  --swiper-pagination-bullet-width: 14px;
+  --swiper-pagination-bullet-height: 14px;
+  --swiper-pagination-bullet-inactive-color: #333333;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-color: transparent;
+  @media (max-width: 700px) {
+    --swiper-pagination-bullet-width: 10px;
+    --swiper-pagination-bullet-height: 10px;
+  }
 }

@@ -10,3 +10,4 @@ initContentMigration();
 import "/resources/js/custom/swiper/swiper.js";
 import "./centers.js";
 import "./stocks.js";
+import "./ratings.js";

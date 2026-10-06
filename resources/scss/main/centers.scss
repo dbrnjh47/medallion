@@ -1,5 +1,8 @@
 .centers {
   margin-top: 100px;
+  .swiper{
+    overflow: initial;
+  }
   &__title {
     display: flex;
     gap: 50px;
