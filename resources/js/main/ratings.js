@@ -1,8 +1,4 @@
-import svgArrow from '/temple/images/main/ratings/star.svg?raw';
 
-document.querySelectorAll('.ratings__star_list div').forEach(el => {
-  el.insertAdjacentHTML('beforeend', svgArrow);
-});
 
 // 
 

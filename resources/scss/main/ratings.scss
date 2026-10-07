@@ -38,17 +38,6 @@
       }
     }
   }
-  &__star_list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 15px;
-    div {
-      svg {
-        fill: #b0a05f;
-      }
-    }
-  }
 
   @media (max-width: 700px) {
     margin-top: 30px;

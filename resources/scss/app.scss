@@ -740,6 +740,24 @@ button {
   }
 }
 
+.star_list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  div {
+    background: #B0A05F;
+    padding: 5px;
+    border-radius: 2px;
+    svg {
+      fill: #fff;
+    }
+    &.half{
+      background: linear-gradient(90deg, #B0A05F 50%, #DAC676 50%);
+    }
+  }
+}
+
 //
 .input {
   background: #e8eaf3;

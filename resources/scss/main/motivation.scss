@@ -1,0 +1,82 @@
+.motivation {
+  margin-top: 100px;
+  padding-bottom: 181px;
+  &::before {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  &__title {
+    margin-bottom: 20px;
+    margin-top: 50px;
+    &_mob {
+      display: none;
+    }
+  }
+  &__content {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: -2%;
+    text-align: justify;
+    &_wrapper {
+      display: flex;
+      gap: 48px;
+      align-items: center;
+    }
+    &_action {
+      color: #fff;
+      font-weight: 900;
+      font-size: 46px;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 22px 42px;
+      padding-bottom: 12px;
+      background: linear-gradient(
+        to right,
+        #b6a774 0%,
+        #d4c58c 50%,
+        #b6a774 100%
+      );
+    }
+    h4 {
+    }
+    p {
+      font-weight: 400;
+    }
+  }
+
+  @media (max-width: 1260px) {
+    padding-bottom: 106px;
+    &__content_action {
+      font-size: 31px;
+    }
+  }
+  @media (max-width: 950px) {
+    padding-bottom: 20px;
+    margin-top: 30px;
+    &__title {
+      margin-top: 10px;
+      margin-bottom: 16px;
+      h3 {
+        display: none;
+      }
+      &_mob {
+        display: block !important;
+      }
+    }
+    &__content {
+      font-size: 12px;
+      text-align: center;
+      &_wrapper {
+        flex-direction: column;
+        gap: 15px;
+      }
+      &_action {
+        font-size: 24px;
+        padding: 11px 20px;
+        padding-bottom: 6px;
+      }
+    }
+  }
+}
