@@ -12,3 +12,4 @@ import "./centers.js";
 import "./stocks.js";
 import "./ratings.js";
 import "./doctors_list.js";
+import "./faq.js";
