@@ -15,6 +15,7 @@
     }
   }
   @media (max-width: 1100px) {
+    margin-top: 73px;
     &::before{
       height: calc(100% - 150px);
     }
