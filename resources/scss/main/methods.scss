@@ -1,0 +1,22 @@
+.methods{
+  margin-top: 100px;
+  &::before{
+    height: calc(100% - 245px);
+  }
+  .approach__text{
+    h4{
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    &::before{
+      height: calc(100% - 126px);
+    }
+  }
+  @media (max-width: 1100px) {
+    &::before{
+      height: calc(100% - 150px);
+    }
+  }
+}
