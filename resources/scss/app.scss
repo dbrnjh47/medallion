@@ -363,7 +363,7 @@ button {
         font-size: 20px;
         line-height: 120%;
         margin-top: 32px;
-        b{
+        b {
           margin-bottom: 35px;
         }
         &::before {
@@ -754,6 +754,27 @@ button {
   justify-content: center;
   gap: 10px;
   margin-bottom: 15px;
+  &__wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    white-space: nowrap;
+    background: #fff;
+    border-radius: 8px;
+    padding: 12px 20px;
+    justify-content: center;
+    .star_list {
+      margin-bottom: 0;
+    }
+    @media (max-width: 800px) {
+      gap: 13px;
+      padding: 8px 13px;    flex-wrap: wrap;
+    }
+  }
   div {
     background: #b0a05f;
     padding: 5px;

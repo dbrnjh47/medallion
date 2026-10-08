@@ -68,21 +68,6 @@
       color: #fff !important;
     }
     &__rating {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      font-family: Roboto;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 130%;
-      white-space: nowrap;
-      background: #fff;
-      border-radius: 8px;
-      padding: 12px 20px;
-      justify-content: center;
-      .star_list {
-        margin-bottom: 0;
-      }
       &_wrapper {
         margin-top: auto;
         display: grid;
@@ -143,11 +128,6 @@
       }
       &__item__btn_mob{
         display: block !important;
-      }
-
-      &__rating{
-        gap: 13px;
-        padding: 8px 13px;    flex-wrap: wrap;
       }
     }
   }
