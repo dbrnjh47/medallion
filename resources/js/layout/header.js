@@ -19,7 +19,7 @@ scrollTarget.addEventListener('scroll', () => {
 
 import svgArrow from '/temple/images/layout/header/arrow.svg?raw';
 
-wrapper.querySelectorAll('.header__menu_arrow').forEach(el => {
+wrapper.querySelectorAll('.header__menu_arrow, .burger_menu__arrow').forEach(el => {
   el.insertAdjacentHTML('beforeend', svgArrow);
 });
 
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.addEventListener('click', (e) => {
       if (!searchBlock.contains(e.target)) {
-        header__menu.style.display = "flex";
+        header__menu.style.display = "";
           searchBlock.classList.remove('header__search__open');
       }
   });
