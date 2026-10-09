@@ -19,12 +19,17 @@
       left: -3px;
       padding-top: 10px;
       font-size: 12px;
-      background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 70%,
+        rgba(255, 255, 255, 0) 100%
+      );
       &::after {
         display: none;
       }
     }
-    .btn{
+    .btn {
       padding: 16px 49px;
       font-size: 12px;
     }
@@ -136,6 +141,20 @@
       right: -23px;
       bottom: 35%;
     }
+    .hero__advantages {
+      justify-content: flex-start;
+      margin-top: 50px;
+      &_item {
+        color: #b0a05f;
+        text-transform: math-auto;
+        div {
+          background: rgb(176 160 95 / 51%);
+        }
+        svg {
+          fill: #b0a05f;
+        }
+      }
+    }
   }
   &__title {
     margin-top: 13px;
@@ -162,7 +181,7 @@
     .a_btn {
       margin-left: 44px;
     }
-    &:hover{
+    &:hover {
       opacity: 1;
     }
   }
@@ -256,12 +275,12 @@
   &__person {
     max-width: 528px;
     max-height: 532px;
-    
+
     margin: 0 auto;
     img {
       top: 7px;
     }
-    
+
     &_star {
       content: "";
       z-index: -1;
@@ -273,7 +292,7 @@
       height: 40px;
     }
   }
-  
+
   &__text_block {
     background: #ffffff;
     padding: 30px;
@@ -359,21 +378,38 @@
         height: 64px;
         width: 64px;
       }
+      svg {
+        fill: #fff;
+      }
     }
   }
 
-  &.hero_standart{
-    .hero__text_block{
-      &::after{
+  &.hero_standart {
+    .hero__text_block {
+      &::after {
         display: none;
       }
-      a{
+      a {
         border-bottom: 2px solid #333333;
         padding-bottom: 7px;
         @media (max-width: 900px) {
           padding-bottom: 0;
           border-bottom: none;
         }
+      }
+    }
+  }
+  &.hero_mini {
+    @media (min-width: 900px) {
+      .hero__solution {
+        display: flex;
+        align-items: flex-end;
+        .hero__person img {
+          top: 0px;
+        }
+      }
+      .hero__text_block {
+        display: none;
       }
     }
   }
@@ -517,9 +553,9 @@
     &__info {
       display: none;
     }
-    &__block_bg_gradient div{ 
+    &__block_bg_gradient div {
       display: none;
-      &:last-child{
+      &:last-child {
         display: block;
         left: -365px;
         width: 620px;
@@ -553,7 +589,7 @@
       a {
         font-size: 12px;
         margin-top: 9px;
-        &::after{
+        &::after {
           content: "";
           position: absolute;
           width: 200px;
@@ -568,7 +604,7 @@
         display: none;
       }
     }
-    &__person img{
+    &__person img {
       position: relative;
       top: 7px;
       width: 95%;

@@ -1,6 +1,7 @@
 import "/resources/scss/service/index.scss";
 
 import "/resources/js/main/price_tabel.js";
+import "/resources/js/main/hero.js";
 
 
 import { initContentMigration } from '/resources/js/custom/contentMigration.js';

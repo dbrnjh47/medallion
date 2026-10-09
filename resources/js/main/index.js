@@ -1,5 +1,6 @@
 import "/resources/scss/main/index.scss";
 import "./steps.js";
+import "./hero.js";
 import "./price_tabel.js";
 import "./about_us.js";
 
