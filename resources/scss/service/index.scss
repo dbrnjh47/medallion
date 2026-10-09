@@ -1,0 +1,36 @@
+@use "/resources/scss/main/hero.scss";
+@use "/resources/scss/main/components/price_mini.scss";
+@use "/resources/scss/main/components/person_bg.scss";
+
+@use "/resources/scss/main/steps.scss";
+@use "/resources/scss/main/price_tabel.scss";
+@use "/resources/scss/main/connection.scss";
+@use "/resources/scss/main/about_us.scss";
+@use "/resources/scss/main/process.scss";
+@use "/resources/scss/main/mini_services.scss";
+@use "/resources/scss/main/approach.scss";
+@use "/resources/scss/main/centers.scss";
+@use "/resources/scss/main/stocks.scss";
+@use "/resources/scss/main/ratings.scss";
+@use "/resources/scss/main/motivation.scss";
+@use "/resources/scss/main/methods.scss";
+
+@use "/resources/scss/main/treatment.scss";
+
+@use "/resources/scss/main/doctors_list.scss";
+@use "/resources/scss/main/verified.scss";
+@use "/resources/scss/main/literature.scss";
+
+.service_faq_title{
+  &__mob{
+    display: none;
+  }
+  @media (max-width: 1150px) {
+    h3{
+      display: none;
+    }
+    &__mob{
+      display: block !important;
+    }
+  }
+}

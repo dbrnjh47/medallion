@@ -6,9 +6,8 @@ export default defineConfig({
         // assetsDir: 'public/sample/v1/assets',
         rollupOptions: {
             input: {
-                main: resolve(
-                    import.meta.dirname, 'index.html'),
-                // view: resolve(import.meta.dirname, 'pages/view.html'),
+                main: resolve(import.meta.dirname, 'index.html'),
+                service: resolve(import.meta.dirname, 'pages/service.html'),
             },
         },
     },

@@ -145,6 +145,21 @@
       z-index: -1;
     }
   }
+  &__reverse{
+    form{
+      order: 2;
+    }
+    // .connection__phone{
+    //   justify-content: start;
+    // }
+    // .person_bg{
+      
+    // left: 0;
+    // right: auto;
+    // transform: translate(0, 0px);
+
+    // }
+  }
 }
 
 .connection {

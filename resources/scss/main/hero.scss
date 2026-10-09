@@ -361,6 +361,22 @@
       }
     }
   }
+
+  &.hero_standart{
+    .hero__text_block{
+      &::after{
+        display: none;
+      }
+      a{
+        border-bottom: 2px solid #333333;
+        padding-bottom: 7px;
+        @media (max-width: 900px) {
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+      }
+    }
+  }
 }
 
 .hero {

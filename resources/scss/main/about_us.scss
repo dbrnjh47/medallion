@@ -78,6 +78,28 @@
       }
     }
   }
+
+  &__more{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+      font-family: Roboto;
+      font-weight: 900;
+      font-size: 16px;
+      letter-spacing: 10%;
+      text-transform: uppercase;
+      svg{
+        transform: rotate(180deg);
+        fill: #B0A05F;
+        margin-left: 15px;
+      }
+    }
+    &_buttons{
+      display: flex;
+      gap: 20px;
+    }
+  }
 }
 
 .about_us {

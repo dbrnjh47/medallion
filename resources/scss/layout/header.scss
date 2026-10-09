@@ -173,7 +173,7 @@ $header__search: $header + "__search";
           justify-content: space-between;
           gap: 10px;
           a {
-            font-size: 12px;
+            font-size: 12px;color: #333 !important;
           }
           &:hover {
             > a {
