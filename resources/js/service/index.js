@@ -17,3 +17,4 @@ import "/resources/js/main/faq.js";
 
 import "/resources/js/main/about_us.js";
 import "./about_us.js";
+import "./doctor_needed.js";
