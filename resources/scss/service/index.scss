@@ -13,7 +13,7 @@
 @use "/resources/scss/main/literature.scss";
 @use "steps_service.scss";
 @use "doctor_needed.scss";
-
+@use "service_connection.scss";
 .service_faq_title{
   &__mob{
     display: none;
