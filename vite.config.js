@@ -9,6 +9,7 @@ export default defineConfig({
                 main: resolve(import.meta.dirname, 'index.html'),
                 service: resolve(import.meta.dirname, 'pages/service.html'),
                 doctors: resolve(import.meta.dirname, 'pages/doctors.html'),
+                doctor: resolve(import.meta.dirname, 'pages/doctor.html'),
             },
         },
     },

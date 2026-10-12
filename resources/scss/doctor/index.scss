@@ -1,0 +1,47 @@
+@use "/resources/scss/main/hero.scss";
+@use "/resources/scss/main/components/person_bg.scss";
+.doctor {
+  &__title_mob{
+    display: none;
+  }
+  .star_list__wrapper {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    z-index: 1;
+  }
+  .hero__solution {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .person_bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: none;
+  }
+  .hero__person img {
+    bottom: 83px;
+    top: auto;    width: 80%;
+  }
+  .hero__text_block {
+    margin-bottom: -16px;
+  }
+
+  @media (max-width: 1600px) {
+    &__title h1,&__title h2, &__title h3{
+      display: none;
+    }
+    &__title_mob{
+      display: block !important;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .hero__solution {
+      padding-top: 208px;
+    }
+  }
+}
