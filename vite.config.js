@@ -10,6 +10,7 @@ export default defineConfig({
                 service: resolve(import.meta.dirname, 'pages/service.html'),
                 doctors: resolve(import.meta.dirname, 'pages/doctors.html'),
                 doctor: resolve(import.meta.dirname, 'pages/doctor.html'),
+                сontact: resolve(import.meta.dirname, 'pages/сontact.html'),
             },
         },
     },
