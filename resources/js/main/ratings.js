@@ -2,8 +2,8 @@
 
 // 
 
-var slider = new Swiper("#ratings_slider", {
-  modules: [SwiperNavigation, SwiperPagination, SwiperAutoplay, SwiperMousewheel],
+var slider = new window.Swiper("#ratings_slider", {
+  modules: [window.SwiperNavigation, window.SwiperPagination, window.SwiperAutoplay, window.SwiperMousewheel],
   // autoplay: {
   //     delay: 2000,
   //     disableOnInteraction: false,

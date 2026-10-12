@@ -494,7 +494,7 @@
   }
 
   @media (max-width: 1053px) {
-    margin-top: 85px;
+    margin-top: 110px;
     &__title h1 {
       font-size: 35px;
     }
@@ -614,5 +614,9 @@
 
   @media (max-width: 750px) {
     margin-bottom: 30px;
+
+    &__block{
+      z-index: 1;
+    }
   }
 }

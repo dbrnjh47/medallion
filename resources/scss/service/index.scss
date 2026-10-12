@@ -31,3 +31,12 @@
     }
   }
 }
+
+.service{
+  @media (max-width: 571px) {
+    .price_tabel {
+      margin-top: 0px;
+    }
+  }
+ 
+}

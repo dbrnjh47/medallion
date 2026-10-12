@@ -1,7 +1,7 @@
 import { createImageGallery } from '/resources/js/custom/gallery/img.js';
 createImageGallery('.centers__slider')();
 
-// var swiper2 = new Swiper("#centers_slider", {
+// var swiper2 = window.Swiper("#centers_slider", {
 //   modules: [SwiperNavigation, SwiperAutoplay, SwiperScrollbar, SwiperMousewheel],
 //   // autoplay: {
 //   //     delay: 2000,
@@ -32,8 +32,8 @@ createImageGallery('.centers__slider')();
 const nextBtn = document.querySelector('.centers .btn_slide.right');
 const prevBtn = document.querySelector('.centers .btn_slide'); 
 
-var slider = new Swiper("#centers_slider", {
-  modules: [SwiperNavigation, SwiperAutoplay, SwiperMousewheel],
+var slider = new window.Swiper("#centers_slider", {
+  modules: [window.SwiperNavigation, window.SwiperAutoplay, window.SwiperMousewheel],
   // autoplay: {
   //     delay: 2000,
   //     disableOnInteraction: false,

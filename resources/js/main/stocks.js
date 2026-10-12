@@ -1,8 +1,8 @@
 const nextBtn = document.querySelector('#stocks_slider .btn_slide.right');
 const prevBtn = document.querySelector('#stocks_slider .btn_slide'); 
 
-var slider = new Swiper("#stocks_slider", {
-  modules: [SwiperNavigation, SwiperAutoplay, SwiperMousewheel],
+var slider = new window.Swiper("#stocks_slider", {
+  modules: [window.SwiperNavigation, window.SwiperAutoplay, window.SwiperMousewheel],
   // autoplay: {
   //     delay: 2000,
   //     disableOnInteraction: false,

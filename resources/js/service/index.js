@@ -1,3 +1,5 @@
+import "/resources/js/custom/swiper/swiper.js";
+
 import "/resources/scss/service/index.scss";
 
 import "/resources/js/main/price_tabel.js";
@@ -8,7 +10,6 @@ import { initContentMigration } from '/resources/js/custom/contentMigration.js';
 
 initContentMigration();
 
-import "/resources/js/custom/swiper/swiper.js";
 
 import "/resources/js/main/ratings.js";
 

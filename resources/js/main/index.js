@@ -1,3 +1,5 @@
+import "/resources/js/custom/swiper/swiper.js";
+
 import "/resources/scss/main/index.scss";
 import "./steps.js";
 import "./hero.js";
@@ -8,7 +10,6 @@ import { initContentMigration } from '/resources/js/custom/contentMigration.js';
 
 initContentMigration();
 
-import "/resources/js/custom/swiper/swiper.js";
 import "./centers.js";
 import "./stocks.js";
 import "./ratings.js";

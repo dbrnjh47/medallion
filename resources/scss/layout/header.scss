@@ -141,7 +141,7 @@ $header__search: $header + "__search";
       display: flex;flex-wrap: wrap;
       gap: 30px;
       row-gap: 20px;
-      
+      padding-right: 10px;
     }
 
     &_arrow {

@@ -3,8 +3,8 @@ import "/resources/scss/doctors/index.scss";
 import "/resources/js/custom/swiper/swiper.js";
 import "/resources/js/main/hero.js";
 
-var slider = new Swiper("#doctors_list_slider", {
-  modules: [SwiperNavigation, SwiperPagination, SwiperAutoplay, SwiperMousewheel, SwiperGrid],
+var slider = new window.Swiper("#doctors_list_slider", {
+  modules: [window.SwiperNavigation, window.SwiperPagination, window.SwiperAutoplay, window.SwiperMousewheel, window.SwiperGrid],
   // autoplay: {
   //     delay: 2000,
   //     disableOnInteraction: false,
@@ -28,11 +28,16 @@ var slider = new Swiper("#doctors_list_slider", {
     // dynamicBullets: true,
   },
   breakpoints: {
-    550: { slidesPerView: 2, slidesPerGroup: 2,},
-    1250: { slidesPerView: 3, grid: {
+    550: { slidesPerView: 2, slidesPerGroup: 2, },
+    1250: {
+      slidesPerView: 3, grid: {
+        fill: 'row',
+        rows: 2,
+      },
+    },
+    1710: { slidesPerView: 4, spaceBetween: 48, grid: {
       fill: 'row',
       rows: 2,
     },},
-    1710: { slidesPerView: 4, spaceBetween: 48,},
   }
 });
