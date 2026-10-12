@@ -14,6 +14,10 @@
 @use "steps_service.scss";
 @use "doctor_needed.scss";
 @use "service_connection.scss";
+
+@use "/resources/scss/main/approach.scss";
+@use "service_approach.scss";
+
 .service_faq_title{
   &__mob{
     display: none;
