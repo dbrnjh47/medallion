@@ -1,4 +1,4 @@
-import "/resources/scss/сontact/index.scss";
+import "/resources/scss/contact/index.scss";
 
 import { initYandexMap } from '/resources/js/custom/yandex_map.js';
 
