@@ -91,16 +91,117 @@
       color: #000000;
     }
   }
-  &__map{
+  &__map {
     width: 100%;
     height: 859px;
-    background: red;
-    position: relative;
-    left: -100px;
+    // background: red;
+
     border-radius: 40px;
-    box-shadow: 0px 24px 50px 0px #0000001A;
+    overflow: hidden;
+
+    z-index: 0;
+    &_wrapper {
+      position: relative;
+      left: -100px;
+      box-shadow: 0px 24px 50px 0px #0000001a;
+      &::after {
+        content: "";
+        border: 1px solid #ffffff;
+        border-bottom: 0;
+        opacity: 0.25;
+        z-index: -1;
+        width: calc(100% + 30px);
+        height: calc(100% + 30px);
+        position: absolute;
+        left: -15px;
+        bottom: -15px;
+        border-radius: 40px;
+      }
+    }
   }
-  .hero__solution::before{
+  .hero__solution::before {
     bottom: 320px;
+  }
+  @media (max-width: 1350px) {
+    &__map {
+      height: 559px;
+      &_wrapper {
+        left: 0px;
+      }
+    }
+  }
+  @media (max-width: 1100px) {
+    &__hero_action a {
+      font-size: 24px;
+    }
+    &__wrapper {
+      h4 {
+        font-size: 28px;
+        text-align: left;
+      }
+      p {
+        font-size: 24px;
+        text-align: left;
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    .hero__solution {
+      max-width: 100%;
+      margin-top: 27px;
+    }
+    &__map_wrapper {
+      border-radius: 14.96px;
+    }
+    &__hero_action {
+      margin-top: 10px;
+      gap: 12px;
+      a {
+        font-size: 18px;
+        span {
+          font-size: 12px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    &__text b {
+      font-size: 14px;
+      text-align: left;
+    }
+    &__urls a {
+      font-size: 12px;
+    }
+    &__title {
+      h3 {
+        display: none;
+        margin-top: 10px;
+      }
+      &_mob {
+        display: block !important;
+      }
+    }
+    &__wrapper {
+      margin-top: 20px;
+      h4 {
+        margin-bottom: 18px;
+        font-size: 12px;
+      }
+      p {
+        font-size: 12px;
+      }
+      li {
+        padding: 10px 0;
+      }
+    }
+    &__map {
+      height: 319px;
+      &_wrapper::after {
+        width: calc(100% + 14px);
+        height: calc(100% + 14px);
+
+        left: -7px;
+        bottom: -7px;
+      }
+    }
   }
 }
