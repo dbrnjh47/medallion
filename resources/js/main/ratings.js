@@ -3,7 +3,7 @@
 // 
 
 var slider = new window.Swiper("#ratings_slider", {
-  modules: [window.SwiperNavigation, window.SwiperPagination, window.SwiperAutoplay, window.SwiperMousewheel],
+  modules: [window.SwiperNavigation, window.SwiperPagination, window.SwiperAutoplay],
   // autoplay: {
   //     delay: 2000,
   //     disableOnInteraction: false,
@@ -12,7 +12,7 @@ var slider = new window.Swiper("#ratings_slider", {
   // loopAddBlankSlides: true,
   // loop: 1,
 
-  mousewheel: true,
+  // mousewheel: true,
   slidesPerView: 1,
   slidesPerGroup: 2,
   // centeredSlides: 1,

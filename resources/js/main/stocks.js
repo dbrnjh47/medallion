@@ -2,7 +2,7 @@ const nextBtn = document.querySelector('#stocks_slider .btn_slide.right');
 const prevBtn = document.querySelector('#stocks_slider .btn_slide'); 
 
 var slider = new window.Swiper("#stocks_slider", {
-  modules: [window.SwiperNavigation, window.SwiperAutoplay, window.SwiperMousewheel],
+  modules: [window.SwiperNavigation, window.SwiperAutoplay],
   // autoplay: {
   //     delay: 2000,
   //     disableOnInteraction: false,
@@ -11,7 +11,7 @@ var slider = new window.Swiper("#stocks_slider", {
   // loopAddBlankSlides: true,
   // loop: 1,
 
-  mousewheel: true,
+  // mousewheel: true,
   slidesPerView: 1,
   slidesPerGroup: 1,
   // centeredSlides: 1,

@@ -33,7 +33,7 @@ const nextBtn = document.querySelector('.centers .btn_slide.right');
 const prevBtn = document.querySelector('.centers .btn_slide'); 
 
 var slider = new window.Swiper("#centers_slider", {
-  modules: [window.SwiperNavigation, window.SwiperAutoplay, window.SwiperMousewheel],
+  modules: [window.SwiperNavigation, window.SwiperAutoplay],
   // autoplay: {
   //     delay: 2000,
   //     disableOnInteraction: false,
@@ -42,7 +42,7 @@ var slider = new window.Swiper("#centers_slider", {
   // loopAddBlankSlides: true,
   // loop: 1,
 
-  mousewheel: true,
+  // mousewheel: true,
   slidesPerView: "auto",
   slidesPerGroup: 1,
   // centeredSlides: 1,

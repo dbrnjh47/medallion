@@ -1,5 +1,5 @@
 var slider = new window.Swiper("#doctors_list_slider", {
-  modules: [window.SwiperNavigation, window.SwiperPagination, window.SwiperAutoplay, window.SwiperMousewheel],
+  modules: [window.SwiperNavigation, window.SwiperPagination, window.SwiperAutoplay],
   // autoplay: {
   //     delay: 2000,
   //     disableOnInteraction: false,
@@ -8,7 +8,7 @@ var slider = new window.Swiper("#doctors_list_slider", {
   // loopAddBlankSlides: true,
   // loop: 1,
 
-  mousewheel: true,
+  // mousewheel: true,
   slidesPerView: 1,
   slidesPerGroup: 1,
   // centeredSlides: 1,

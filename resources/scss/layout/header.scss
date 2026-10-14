@@ -166,6 +166,7 @@ $header__search: $header + "__search";
       opacity: 0;
       visibility: hidden;
       transform: translateY(10px);
+      transition-delay: 0.25s;
       ul {
         li {
           margin-top: 20px;
@@ -213,6 +214,7 @@ $header__search: $header + "__search";
 
       &:hover {
         .header__menu__list {
+          transition-delay: 0s;
           opacity: 1;
           visibility: visible;
           transform: translateY(0);

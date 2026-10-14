@@ -13,6 +13,7 @@
     },
     "dependencies": {
         "autoprefixer": "^10.4.20",
+        "micromodal": "^0.7.0",
         "sass": "^1.80.6",
         "swiper": "^14.2.0"
     }

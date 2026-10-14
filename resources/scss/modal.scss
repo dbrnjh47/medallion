@@ -1,0 +1,191 @@
+.modal {
+  display: none;
+  &.is-open {
+    display: block;
+  }
+  &[aria-hidden="false"] .modal__overlay {
+    animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  &[aria-hidden="false"] .modal__wrapper {
+    animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  &[aria-hidden="true"] .modal__overlay {
+    animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  &[aria-hidden="true"] .modal__wrapper {
+    animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+  }
+  & .modal__wrapper,
+  & .modal__overlay {
+    will-change: transform;
+  }
+
+  .person_bg {
+    max-width: 471px;
+    width: 471px;
+    position: absolute;
+    left: -26px;
+    bottom: 0;
+    max-height: 539px;
+  }
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffffe6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+  }
+  &__content {
+    display: flex;
+    margin-bottom: 0 !important;
+  }
+  form {
+    margin-left: 427px;
+    max-width: 354px;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    padding-right: 5px;
+  }
+  &__wrapper {
+    padding: 40px 46px;
+    padding-right: 41px;
+    // max-width: 500px;
+    box-sizing: border-box;
+    background: url(/temple/images/modal/bg.png) 0 0 / 100% 100%;
+    background-color: #b0a05f;
+    position: relative;
+    max-height: 93vh;
+    display: flex;
+  }
+  main {
+    position: initial;
+  }
+
+  .modal__close {
+    background: transparent;
+    border: 0;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+  }
+  &__header .modal__close:before {
+    content: "\2715";
+    font-size: 27px;
+    color: #b1a466;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: 8%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  &__input {
+    width: 100%;
+    border: 2px solid #ffffff;
+    padding: 28px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    &::placeholder {
+      color: #fff;
+    }
+  }
+  .btn {
+    width: 100%;
+    color: #b0a05f;
+    margin-top: 15px;
+    margin-bottom: 22px;
+  }
+}
+
+@keyframes mmfadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mmfadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes mmslideIn {
+  from {
+    transform: translateY(15%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes mmslideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10%);
+  }
+}
+
+.modal {
+  @media (max-width: 1000px) {
+    .person_bg {
+      display: none;
+    }
+    form {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .modal__close {
+      top: -37px;
+      right: 50%;
+      transform: translate(50%, 0px);
+    }
+    &__wrapper {
+      background: url(/temple/images/modal/bg.png);
+      background-position: right;
+      padding: 30px 15px;
+    }
+    &__title {
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+    &__input {
+      padding: 20px;
+    }
+    .checkbox {
+      padding-left: 40px;
+      label {
+        font-size: 12px;
+      }
+    }
+  }
+}
