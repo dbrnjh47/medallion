@@ -738,7 +738,10 @@ button {
 .checkbox {
   position: relative;
   padding-left: 45px;
-  min-height: 40px;
+  min-height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   input {
     display: none;
   }
@@ -764,7 +767,7 @@ button {
     min-width: 26px;
     height: 26px;
     background-color: #B0A05F;
-    border: 1px solid #8e95a6;
+    border: 1px solid transparent;
     border-radius: 2px;
     box-shadow: none;
     cursor: pointer;
@@ -796,7 +799,7 @@ button {
     // opacity: 0;
     transition: all 0.4s;
 
-    background-color: #D0C277;
+    background-color: transparent;
     mask: url("/temple/images/layout/checkbox.svg");
     mask-size: 15px 15px;
     mask-repeat: no-repeat;
@@ -833,35 +836,35 @@ button {
   &.is_invalid {
     input,
     textarea {
-      color: #ff6060;
+      color: #e8222282;
       background: #ff606014;
       animation: error-auto 2s linear infinite;
       &::placeholder {
-        color: #ff6060;
+        color: #e8222282;
       }
     }
 
-    .checkbox input + label::before {
-      background: #ff606014;
+    .checkbox input + label::before, &.checkbox input + label::before {
+      background: #e8222282;
       animation: error-auto 2s linear infinite;
     }
   }
   .invalid_feedback {
-    color: #ff6060;
+    color: #e82222;
     font-size: 14px;
     font-weight: 400;
-    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
 @keyframes error-auto {
   0% {
-    box-shadow: 0px 0px 5px transparent;
+    box-shadow: 0px 0px 15px transparent;
   }
   50% {
-    box-shadow: 0px 0px 5px #c8828f80;
+    box-shadow: 0px 0px 15px #e8222282;
   }
   100% {
-    box-shadow: 0px 0px 5px transparent;
+    box-shadow: 0px 0px 15px transparent;
   }
 }
