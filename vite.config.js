@@ -11,6 +11,7 @@ export default defineConfig({
                 doctors: resolve(import.meta.dirname, 'pages/doctors.html'),
                 doctor: resolve(import.meta.dirname, 'pages/doctor.html'),
                 contact: resolve(import.meta.dirname, 'pages/contact.html'),
+                view: resolve(import.meta.dirname, 'pages/view.html'),
             },
         },
     },
