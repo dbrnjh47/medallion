@@ -277,6 +277,9 @@
     max-height: 532px;
 
     margin: 0 auto;
+    picture{
+      display: contents;
+    }
     img {
       top: 7px;
     }
@@ -477,8 +480,8 @@
       width: calc(100% + 7px);
     }
     &__person {
-      max-width: 340px;
-      max-height: 340px;
+      max-width: 540px;
+      max-height: 540px;
     }
     &__text_block {
       max-width: 458px;

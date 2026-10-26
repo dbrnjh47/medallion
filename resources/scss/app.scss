@@ -362,7 +362,7 @@ button {
       padding-left: 0;
       margin-bottom: 32px;
       margin-top: 33px;
-      li {
+      & > li {
         position: relative;
         padding-left: 26px;
         counter-increment: li;
@@ -389,7 +389,7 @@ button {
       }
       ol {
         margin-top: 0;
-        li {
+        & > li {
           margin-top: 0;
         }
       }
