@@ -3,11 +3,16 @@
 @use "breadcrumb.scss";
 @use "/resources/scss/main/components/person_bg.scss";
 @use "modal.scss";
+
+.body_wrapper>*{
+  z-index: 1;
+}
+
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  // scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -311,6 +316,13 @@ button {
       font-size: 20px;
       line-height: 120%;
       display: block;
+    }
+    a {
+      color: #9c8e54;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
     }
     ul {
       margin-bottom: 29px;
@@ -721,6 +733,52 @@ button {
 }
 
 //
+
+.app_table {
+  margin: 10px 0;
+  overflow-x: auto;
+  width: 100%;
+  max-width: calc(100vw - 30px);
+}
+.app_table table {
+  border-spacing: 0 18px;
+  width: 100%;
+  min-width: 700px;
+  border: 1px solid #9b8d5442;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+.app_table table th,
+.app_table table td {
+  border-bottom: 1px solid #e3e6ea;
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.app_table table tbody tr td {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.app_table table th {
+  background: #9b8d54ba;
+  color: #fff;
+}
+
+@media (width<=800px) {
+  .app_table table tbody tr th,
+  .app_table table tbody tr td {
+    padding: 7px 8px;
+    font-size: 12px;
+  }
+  .app_table table {
+    min-width: 500px;
+  }
+}
+
+//
 .input {
   background: #e8eaf3;
   border-radius: 6px;
@@ -750,7 +808,7 @@ button {
     font-weight: 400;
     font-size: 14px;
     line-height: 110%;
-    color: #FFFFFF;
+    color: #ffffff;
     sup {
       font-size: 10px;
       top: 0;
@@ -766,14 +824,14 @@ button {
     width: 26px;
     min-width: 26px;
     height: 26px;
-    background-color: #B0A05F;
+    background-color: #b0a05f;
     border: 1px solid transparent;
     border-radius: 2px;
     box-shadow: none;
     cursor: pointer;
 
     position: absolute;
-    left:0;
+    left: 0;
     top: 0;
   }
   input + label::after {
@@ -822,7 +880,7 @@ button {
     color: #fff;
     display: inline;
     &:hover {
-      text-decoration: none
+      text-decoration: none;
     }
   }
 }
@@ -844,7 +902,8 @@ button {
       }
     }
 
-    .checkbox input + label::before, &.checkbox input + label::before {
+    .checkbox input + label::before,
+    &.checkbox input + label::before {
       background: #e8222282;
       animation: error-auto 2s linear infinite;
     }
