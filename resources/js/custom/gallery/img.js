@@ -9,7 +9,7 @@ import "./index.scss";
  */
 export function createImageGallery(containerSelector, options = {}) {
     const config = {
-        delegate: '*:not(.slick-cloned):not(.term__arrow):not([href="#!"]):not([href^="#"])',
+        delegate: '*:not(.slick-cloned):not(.no-gallery):not(.term__arrow):not([href="#!"]):not([href^="#"])',
         tLoading: 'Загрузка изображения',
         mainClass: 'mfp-img-mobile',
         preload: [0, 1],
